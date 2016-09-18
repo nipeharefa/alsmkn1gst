@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+.footer {
+	margin-top: 20px;
+	min-height: 200px;
+	background: #2f3034;
+
+	& .container {
+
+		&:first-child {
+			padding-top:4rem;
+			margin: 0 auto;
+			width: 80rem;
+		}
+	}
+
+	& .footerTitle {
+
+	}
+
+	& .footerField {
+
+		& ul {
+			margin-top: 20px;
+			list-style-type: none;
+			padding: 0;
+
+			& li {
+				margin-top: 1rem;
+				& a {
+					color:inherit;
+					text-decoration: none;
+
+					&:hover {
+						color: white;
+					}
+				}
+
+			}
+		}
+	}
+
+
+	& .line {
+		border-top:1px solid $line-footer;
+		margin: 0 auto;
+		width: 60rem;
+
+		&:after {
+			display: clear
+		}
+	}
+
+	& .copyright {
+		text-align: center;
+		margin-top:20px;
+		width: 80rem;
+	}
+}

@@ -1,0 +1,41 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html {
+	font-size: 10px;
+}
+
+$abu: #909090;
+
+.lineVertical {
+	width: 1px;
+	height: 40rem;
+	display: block;
+	border-left: 1px solid #ddd;
+	margin: auto;
+}
+
+.department {
+	width: 20rem;
+	float:left;
+	& label {
+		color: $abu
+	}
+}
+
+.graduateYear {
+	margin-left: 15px;
+	float:left;
+	width: 20rem;
+
+	& label {
+		color: $abu
+	}
+}

@@ -1,0 +1,21 @@
+@import "base.scss";
+@import "footer.scss";
+
+$smallFont: 1.4rem;
+.forgotLink {
+	color:red;
+	font-size: $smallFont;
+}
+
+.formLogin {
+	padding-bottom: 10px;
+	&:first-child {
+		margin-top: 10px;
+	}
+}
+
+.formRegister {
+	&:first-child {
+		margin-top: 10px;
+	}
+}
