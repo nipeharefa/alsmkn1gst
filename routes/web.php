@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/register', 'HomeController@showRegistrationForm');
 Route::post('/register', 'RegisterController@create');
+
+Route::get('/login', 'HomeController@showLoginForm');

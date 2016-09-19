@@ -15,4 +15,8 @@ class HomeController extends Controller
     public function showRegistrationForm() {
     	return view('page.register');
     }
+
+    public function showLoginForm() {
+        return view('page.login');
+    }
 }

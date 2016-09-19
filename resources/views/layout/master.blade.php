@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	<app></app>
+	@yield('content')
 	@include('_partial._footer')
-	<script type="text/javascript" src="{{ asset('js/general/pages/register.js') }}"></script>
 </body>
 </html>
