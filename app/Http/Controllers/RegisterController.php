@@ -29,8 +29,16 @@ class RegisterController extends Controller
     			'password' => bcrypt($request->password),
                 'department_id' => $request->department,
     			'username' => str_slug($request->username)];
-    	User::create($data);
-    	return $request->all();
+    	$user = User::create($data);
+
+        $data = [
+            'status' => 'ok',
+            'code' => 200,
+            'data' => $user
+        ];
+
+        return response()->jso($data, 200);
+
     }
 
     /**
