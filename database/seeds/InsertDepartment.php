@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Department;
 
-class DatabaseSeeder extends Seeder
+class InsertDepartment extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-        $this->call(InsertDepartment::class);
+        Department::create(['id' => 4036, 'name' => 'Teknik Komputer dan Jaringan']);
     }
 }

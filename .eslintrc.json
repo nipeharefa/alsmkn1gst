@@ -1,19 +1,18 @@
 {
-	"plugins": [
-		"vue", "html"
-	],
-	"env": {
-		"browser": true,
-		"node": true // allow environemtn node
-	},
-	"extends": [
-		"eslint:recommended",
-		"vue"
-	],
-	"rules": {
-		"no-set-state": "off",
-		// Override our default settings just for this directory
-		"eqeqeq": "warn",
-		"strict": "off"
-	}
+    "plugins": [
+        "vue", "html"
+    ],
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "vue"
+    ],
+    "rules": {
+        "no-set-state": "off",
+        // Override our default settings just for this directory
+        "eqeqeq": "warn",
+        "strict": "off"
+    }
 }

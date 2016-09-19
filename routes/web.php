@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', 'HomeController@showRegistrationForm')->middleware('web');
+Route::get('/register', 'HomeController@showRegistrationForm');
+Route::post('/register', 'RegisterController@create');
