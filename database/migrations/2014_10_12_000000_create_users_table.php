@@ -23,8 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('profile_picture')->nullable();
-            $table->boolean('active');
-            $table->boolean('suspend');
+            $table->boolean('active')->default(0);
+            $table->boolean('suspend')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
